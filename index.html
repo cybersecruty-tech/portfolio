@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sherzod Tuxsanboyev — Portfolio</title>
+<meta name="description" content="Sherzod Tuxsanboyev — FDTU talabasi, kiberxavfsizlik va veb-dasturlash bo'yicha portfolio.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="glow g1"></div><div class="glow g2"></div>
+
+<nav>
+  <div class="wrap">
+    <a href="#home" class="logo">Sherzod<span>.dev</span></a>
+    <div class="links" id="links">
+      <a href="#about">Men haqimda</a>
+      <a href="#skills">Ko'nikmalar</a>
+      <a href="#projects">Loyihalar</a>
+      <a href="#experience">Tajriba</a>
+      <a href="#contact">Aloqa</a>
+      <button class="icon-btn" id="theme" title="Mavzuni almashtirish">🌙</button>
+    </div>
+    <button class="icon-btn burger" id="burger" aria-label="Menyu">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="badge"><span class="dot"></span> Yangi loyihalarga ochiqman</div>
+      <h1>Salom, men <span class="grad">Sherzod</span><br>Tuxsanboyev</h1>
+      <div class="typed">Men — <b id="typed"></b></div>
+      <p class="lead">Farg'ona davlat texnika universiteti 3-kurs talabasiman. Kiberxavfsizlik, dasturlash va veb-dasturlash bilan shug'ullanaman: xavfsiz, tez va zamonaviy yechimlar yarataman.</p>
+      <div class="btns">
+        <a href="#projects" class="btn primary">Loyihalarni ko'rish →</a>
+        <a href="#contact" class="btn ghost">Bog'lanish</a>
+      </div>
+      <div class="socials">
+        <a href="https://t.me/SHERZO_D" target="_blank" title="Telegram"><svg viewBox="0 0 24 24"><path d="M9.8 15.3l-.4 5.3c.6 0 .8-.3 1.1-.6l2.7-2.5 5.5 4c1 .6 1.7.3 2-.9l3.6-17c.3-1.5-.6-2.1-1.6-1.7L1.3 9.9c-1.4.6-1.4 1.4-.2 1.8l5.4 1.7L19 5.5c.6-.4 1.1-.2.7.2z"/></svg></a>
+        <a href="https://instagram.com/mr.sher_022" target="_blank" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.2-9.6a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
+        <a href="mailto:tuxsanboevsherzod@gmail.com" title="Email"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm2 2v.5l8 5 8-5V7H4zm16 2.8l-8 5-8-5V17h16V9.8z"/></svg></a>
+        <a href="tel:+998971783787" title="Telefon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></a>
+      </div>
+    </div>
+    <div class="avatar">
+      <div class="avatar-in"><img src="photo.jpg" alt="Sherzod Tuxsanboyev"></div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">01 · Men haqimda</div><h2 class="sec-title">Xavfsiz kod — mening <span class="grad">yo'nalishim</span></h2></div>
+    <div class="about-grid">
+      <div class="card reveal">
+        <p>Men Sherzod Tuxsanboyev, Farg'ona davlat texnika universiteti (FDTU) 3-kurs talabasiman. Asosiy yo'nalishlarim: kiberxavfsizlik, dasturlash va veb-dasturlash.</p>
+        <p>Veb-saytlar va ilovalar yarataman, ularni zaifliklardan himoya qilishni o'rganaman. Har bir loyihada xavfsizlik, tezlik va qulaylikni birinchi o'ringa qo'yaman.</p>
+        <p>Doimo yangi texnologiyalarni o'rganaman, real loyihalar ustida ishlayman va bilimimni amaliyotda sinab ko'raman.</p>
+        <a href="#contact" class="btn ghost" style="margin-top:8px">✉ Men bilan bog'lanish</a>
+      </div>
+      <div class="stats">
+        <div class="card stat reveal"><h3 class="grad" data-count="3">0</h3><span>kurs, FDTU</span></div>
+        <div class="card stat reveal"><h3 class="grad" data-count="10">0</h3><span>loyiha</span></div>
+        <div class="card stat reveal"><h3 class="grad" data-count="3">0</h3><span>yo'nalish</span></div>
+        <div class="card stat reveal"><h3 class="grad" data-count="8">0</h3><span>texnologiya</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">02 · Ko'nikmalar</div><h2 class="sec-title">Nima bilan <span class="grad">ishlayman</span></h2></div>
+    <div class="skills">
+      <div class="card skill reveal"><div class="skill-ic">🌐</div><h3>Veb-dasturlash</h3>
+        <div class="bar"><div class="bar-top"><span>HTML / CSS</span><span>95%</span></div><div class="track"><div class="fill" data-w="95"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>JavaScript</span><span>85%</span></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>React</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+      </div>
+      <div class="card skill reveal"><div class="skill-ic">💻</div><h3>Dasturlash</h3>
+        <div class="bar"><div class="bar-top"><span>Python</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>C++</span><span>70%</span></div><div class="track"><div class="fill" data-w="70"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>SQL</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+      </div>
+      <div class="card skill reveal"><div class="skill-ic">🛡️</div><h3>Kiberxavfsizlik</h3>
+        <div class="bar"><div class="bar-top"><span>Tarmoq xavfsizligi</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>Linux / Kali</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+        <div class="bar"><div class="bar-top"><span>Web zaifliklar (OWASP)</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">03 · Loyihalar</div><h2 class="sec-title">Tanlangan <span class="grad">ishlarim</span></h2></div>
+    <div class="filters reveal" id="filters">
+      <button class="on" data-f="all">Barchasi</button>
+      <button data-f="web">Veb</button>
+      <button data-f="app">Ilova</button>
+      <button data-f="ai">AI</button>
+    </div>
+    <div class="projects">
+      <div class="card proj reveal" data-cat="ai">
+        <div class="proj-img" style="background:linear-gradient(135deg,#7c5cff,#00d4ff)">🤖</div>
+        <div class="proj-body"><h3>IshoraAI</h3><p>Imo-ishora tilini sun'iy intellekt yordamida matnga aylantiruvchi tizim.</p>
+          <div class="tags"><span>Python</span><span>AI</span><span>OpenCV</span></div></div>
+      </div>
+      <div class="card proj reveal" data-cat="app">
+        <div class="proj-img" style="background:linear-gradient(135deg,#ff4fd8,#7c5cff)">💪</div>
+        <div class="proj-body"><h3>MasterFit</h3><p>Shaxsiy mashg'ulot rejalari va natijalarni kuzatuvchi fitnes ilovasi.</p>
+          <div class="tags"><span>React Native</span><span>Firebase</span></div></div>
+      </div>
+      <div class="card proj reveal" data-cat="ai">
+        <div class="proj-img" style="background:linear-gradient(135deg,#00d4ff,#22c55e)">💧</div>
+        <div class="proj-body"><h3>SuvAI</h3><p>Sug'orishni sensorlar va AI orqali boshqaradigan aqlli tizim.</p>
+          <div class="tags"><span>IoT</span><span>Python</span><span>ML</span></div></div>
+      </div>
+      <div class="card proj reveal" data-cat="web">
+        <div class="proj-img" style="background:linear-gradient(135deg,#f59e0b,#ff4fd8)">🎓</div>
+        <div class="proj-body"><h3>IELTS tayyorlov sayti</h3><p>IELTS imtihoniga tayyorlanuvchilar uchun materiallar va testlar platformasi.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div></div>
+      </div>
+      <div class="card proj reveal" data-cat="web">
+        <div class="proj-img" style="background:linear-gradient(135deg,#0ea5e9,#7c5cff)">🛡️</div>
+        <div class="proj-body"><h3>CyberUz</h3><p>Kiberxavfsizlik bo'yicha ma'lumot va maslahatlar beruvchi veb-sayt.</p>
+          <div class="tags"><span>Web</span><span>Security</span></div></div>
+      </div>
+      <div class="card proj reveal" data-cat="app">
+        <div class="proj-img" style="background:linear-gradient(135deg,#eab308,#f97316)">📈</div>
+        <div class="proj-body"><h3>XAU Trading Bot</h3><p>MetaTrader 5 uchun oltin (XAUUSD) savdosini avtomatlashtiruvchi robot.</p>
+          <div class="tags"><span>MQL5</span><span>Algo trading</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">04 · Tajriba</div><h2 class="sec-title">Mening <span class="grad">yo'lim</span></h2></div>
+    <div class="timeline">
+      <div class="card tl reveal"><small>2025 — hozir</small><h3>Kiberxavfsizlik va veb-dasturlash</h3><p>Shaxsiy loyihalar ustida ishlayman: veb-saytlar, AI tizimlar va xavfsizlik bo'yicha amaliy mashg'ulotlar.</p></div>
+      <div class="card tl reveal"><small>2025 — 2026</small><h3>Startap loyihalar</h3><p>IshoraAI, MasterFit va SuvAql kabi g'oyalar uchun arxitektura va prototiplar ishlab chiqdim.</p></div>
+      <div class="card tl reveal"><small>2024 — hozir</small><h3>Bakalavr · Farg'ona davlat texnika universiteti</h3><p>Hozirda 3-kursda o'qiyapman. Dasturlash va axborot xavfsizligini chuqur o'rganyapman.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="reveal"><div class="eyebrow">05 · Aloqa</div><h2 class="sec-title">Keling, birga <span class="grad">ishlaymiz</span></h2></div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="c-item"><div class="ic">✉️</div><div><small>Email</small><a href="mailto:tuxsanboevsherzod@gmail.com">tuxsanboevsherzod@gmail.com</a></div></div>
+        <div class="c-item"><div class="ic">📱</div><div><small>Telefon</small><a href="tel:+998971783787">+998 97 178 37 87</a></div></div>
+        <div class="c-item"><div class="ic">✈️</div><div><small>Telegram</small><a href="https://t.me/SHERZO_D" target="_blank">@SHERZO_D</a></div></div>
+        <div class="c-item"><div class="ic">📍</div><div><small>Manzil</small>Farg'ona, O'zbekiston</div></div>
+      </div>
+      <!-- Netlify Forms: xabarlar Netlify paneli → Forms bo'limiga tushadi -->
+      <form class="card reveal" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="cform">
+        <input type="hidden" name="form-name" value="contact">
+        <p hidden><input name="bot-field"></p>
+        <input name="name" placeholder="Ismingiz" required>
+        <input name="email" type="email" placeholder="Email manzilingiz" required>
+        <textarea name="message" placeholder="Xabaringiz..." required></textarea>
+        <button class="btn primary" type="submit">Xabar yuborish 🚀</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">© <span id="yr"></span> Sherzod Tuxsanboyev · Mehr bilan yaratildi ⚡</div></footer>
+<div id="toast">Rahmat! Xabaringiz yuborildi ✅</div>
+
+<script src="script.js"></script>
+</body>
+</html>
